@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+      
+    <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2020.10.02 a las 03:47:31 PM CLST 
+
+  -->
+      
+    <bindings xmlns:tns="http://www.example.org/mercadito_v1" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="cl.mercados.ws.dto.v10"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="tns:InputArticuloCrear">
+                  
+            <class ref="cl.mercados.ws.dto.v10.InputArticuloCrear"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ArticuloType">
+                  
+            <class ref="cl.mercados.ws.dto.v10.ArticuloType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:InputArticuloActualizar">
+                  
+            <class ref="cl.mercados.ws.dto.v10.InputArticuloActualizar"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputArticuloObtener">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputArticuloObtener"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputArticuloCrear">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputArticuloCrear"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputArticuloConsultar">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputArticuloConsultar"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:InputCajaCrear">
+                  
+            <class ref="cl.mercados.ws.dto.v10.InputCajaCrear"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:CajaType">
+                  
+            <class ref="cl.mercados.ws.dto.v10.CajaType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:InputCajaActualizar">
+                  
+            <class ref="cl.mercados.ws.dto.v10.InputCajaActualizar"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputCajaCrear">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputCajaCrear"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputCajaObtener">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputCajaObtener"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputCajaConsultar">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputCajaConsultar"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:InputClienteCrear">
+                  
+            <class ref="cl.mercados.ws.dto.v10.InputClienteCrear"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ClienteType">
+                  
+            <class ref="cl.mercados.ws.dto.v10.ClienteType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:InputClienteActualizar">
+                  
+            <class ref="cl.mercados.ws.dto.v10.InputClienteActualizar"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputClienteCrear">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputClienteCrear"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputClienteObtener">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputClienteObtener"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputClienteConsultar">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputClienteConsultar"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:InputProveedorCrear">
+                  
+            <class ref="cl.mercados.ws.dto.v10.InputProveedorCrear"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ProveedorType">
+                  
+            <class ref="cl.mercados.ws.dto.v10.ProveedorType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:InputProveedorActualizar">
+                  
+            <class ref="cl.mercados.ws.dto.v10.InputProveedorActualizar"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputProveedorObtener">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputProveedorObtener"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputProveedorCrear">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputProveedorCrear"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputProveedorConsultar">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputProveedorConsultar"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:InputProductoCrear">
+                  
+            <class ref="cl.mercados.ws.dto.v10.InputProductoCrear"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ProductoType">
+                  
+            <class ref="cl.mercados.ws.dto.v10.ProductoType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:InputProductoActualizar">
+                  
+            <class ref="cl.mercados.ws.dto.v10.InputProductoActualizar"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputProductoConsultar">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputProductoConsultar"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputProductoObtener">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputProductoObtener"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputProductoCrear">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputProductoCrear"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:InputCajadetalleCrear">
+                  
+            <class ref="cl.mercados.ws.dto.v10.InputCajadetalleCrear"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:CajadetalleType">
+                  
+            <class ref="cl.mercados.ws.dto.v10.CajadetalleType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:InputCajadetalleActualizar">
+                  
+            <class ref="cl.mercados.ws.dto.v10.InputCajadetalleActualizar"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputCajadetalleCrear">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputCajadetalleCrear"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputCajadetalleObtener">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputCajadetalleObtener"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputCajadetalleConsultar">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputCajadetalleConsultar"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:InputVentaCrear">
+                  
+            <class ref="cl.mercados.ws.dto.v10.InputVentaCrear"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:VentaType">
+                  
+            <class ref="cl.mercados.ws.dto.v10.VentaType"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:InputVentaActualizar">
+                  
+            <class ref="cl.mercados.ws.dto.v10.InputVentaActualizar"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputVentaCrear">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputVentaCrear"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputVentaObtener">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputVentaObtener"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:OutputVentaConsultar">
+                  
+            <class ref="cl.mercados.ws.dto.v10.OutputVentaConsultar"/>
+                
+        </bindings>
+          
+    </bindings>
+    
+</bindings>

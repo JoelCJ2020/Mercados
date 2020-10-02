@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/mercadito_v1" xmlns:tns="http://www.example.org/mercadito_v1" elementFormDefault="qualified">
+
+
+    <complexType name="ClienteType">
+    	<sequence>
+    		<element name="rut" type="string" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="nombre" type="string" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    	<attribute name="id" type="long"></attribute>
+    </complexType>
+
+    <complexType name="ProveedorType">
+    	<sequence>
+    		<element name="rut" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="nombre" type="string" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    	<attribute name="id" type="long"></attribute>
+    </complexType>
+
+    <complexType name="ProductoType">
+    	<sequence>
+    		<element name="cod" type="string" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="nombre" type="string" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="descr" type="string" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="proveedorId" type="long" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="precio" type="int" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    	<attribute name="id" type="long"></attribute>
+    </complexType>
+
+    <complexType name="ArticuloType">
+    	<sequence>
+    		<element name="cod" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="nombre" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="productoId" type="long" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    	<attribute name="id" type="long"></attribute>
+    </complexType>
+
+    <complexType name="CajaType">
+    	<sequence>
+    		<element name="clienteId" type="long" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    	<attribute name="id" type="long"></attribute>
+    </complexType>
+
+    <complexType name="CajadetalleType">
+    	<sequence>
+    		<element name="cantidad" type="int" maxOccurs="1" minOccurs="1"></element>
+    		<element name="caja_id" type="long" maxOccurs="1" minOccurs="1"></element>
+    		<element name="productoId" type="long" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    	<attribute name="id" type="long"></attribute>
+    </complexType>
+
+    <complexType name="VentaType">
+    	<sequence>
+    		<element name="total" type="int" maxOccurs="1" minOccurs="1"></element>
+    		<element name="clienteId" type="long" maxOccurs="1" minOccurs="1"></element>
+    		<element name="cajaId" type="long" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    	<attribute name="id" type="long"></attribute>
+    </complexType>
+
+
+    <element name="InputArticuloCrear">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:ArticuloType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="InputArticuloActualizar">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:ArticuloType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+
+    <element name="OutputArticuloObtener">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:ArticuloType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="OutputArticuloCrear">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:ArticuloType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="OutputArticuloConsultar">
+    	<complexType>
+    		<sequence>
+    			<element name="registro" type="tns:ArticuloType" maxOccurs="unbounded" minOccurs="0"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="InputCajaCrear">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:CajaType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="InputCajaActualizar">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:CajaType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="OutputCajaCrear">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:CajaType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="OutputCajaObtener">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:CajaType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="OutputCajaConsultar">
+    	<complexType>
+    		<sequence>
+    			<element name="registro" type="tns:CajaType" maxOccurs="unbounded" minOccurs="0"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="InputClienteCrear">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:ClienteType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="InputClienteActualizar">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:ClienteType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="OutputClienteCrear">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:ClienteType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="OutputClienteObtener">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:ClienteType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="OutputClienteConsultar">
+    	<complexType>
+    		<sequence>
+    			<element name="registro" type="tns:ClienteType" maxOccurs="unbounded" minOccurs="0"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="InputProveedorCrear">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:ProveedorType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="InputProveedorActualizar">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:ProveedorType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+
+    
+    <element name="OutputProveedorObtener">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:ProveedorType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+
+    <element name="OutputProveedorCrear">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:ProveedorType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+
+    <element name="OutputProveedorConsultar">
+    	<complexType>
+    		<sequence>
+    			<element name="registro" type="tns:ProveedorType" maxOccurs="unbounded" minOccurs="0"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="InputProductoCrear">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:ProductoType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="InputProductoActualizar">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:ProductoType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+
+
+    <element name="OutputProductoConsultar">
+    	<complexType>
+    		<sequence>
+    			<element name="registro" type="tns:ProductoType" maxOccurs="unbounded" minOccurs="0"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+    
+    <element name="OutputProductoObtener">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:ProductoType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+
+
+    <element name="OutputProductoCrear">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:ProductoType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+
+    <element name="InputCajadetalleCrear">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:CajadetalleType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="InputCajadetalleActualizar">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:CajadetalleType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="OutputCajadetalleCrear">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:CajadetalleType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="OutputCajadetalleObtener">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:CajadetalleType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="OutputCajadetalleConsultar">
+    	<complexType>
+    		<sequence>
+    			<element name="registro" type="tns:CajadetalleType" maxOccurs="unbounded" minOccurs="0"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="InputVentaCrear">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:VentaType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+
+    <element name="InputVentaActualizar">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:VentaType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+
+    <element name="OutputVentaCrear">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:VentaType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="OutputVentaObtener">
+    	<complexType>
+    		<complexContent>
+    			<extension base="tns:VentaType"></extension>
+    		</complexContent>
+    	</complexType>
+    </element>
+    
+    <element name="OutputVentaConsultar">
+    	<complexType>
+    		<sequence>
+    			<element name="registro" type="tns:VentaType" maxOccurs="unbounded" minOccurs="0"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+</schema>
