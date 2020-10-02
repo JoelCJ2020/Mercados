@@ -10,20 +10,19 @@ package cl.mercados.ws.dto.v10;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Clase Java para anonymous complex type.
+ * <p>Clase Java para NewComplexType complex type.
  * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType&gt;
+ * &lt;complexType name="NewComplexType"&gt;
  *   &lt;complexContent&gt;
- *     &lt;extension base="{http://www.example.org/mercadito_v1}CajaType"&gt;
- *     &lt;/extension&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
  * &lt;/complexType&gt;
  * </pre>
@@ -31,11 +30,8 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "")
-@XmlRootElement(name = "InputCajaCrear")
-public class InputCajaCrear
-    extends CajaType
-{
+@XmlType(name = "NewComplexType")
+public class NewComplexType {
 
 
 }

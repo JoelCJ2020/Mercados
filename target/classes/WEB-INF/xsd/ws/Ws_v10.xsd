@@ -361,4 +361,6 @@
     		</sequence>
     	</complexType>
     </element>
+
+    <complexType name="NewComplexType"></complexType>
 </schema>
