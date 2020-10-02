@@ -6,7 +6,7 @@
 Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
 Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-Generado el: 2020.10.02 a las 05:34:30 PM CLST 
+Generado el: 2020.10.02 a las 05:42:25 PM CLST 
 
   -->
       
@@ -267,12 +267,6 @@ Generado el: 2020.10.02 a las 05:34:30 PM CLST
         <bindings if-exists="true" scd="tns:OutputVentaConsultar">
                   
             <class ref="cl.mercados.ws.dto.v10.OutputVentaConsultar"/>
-                
-        </bindings>
-            
-        <bindings if-exists="true" scd="~tns:NewComplexType">
-                  
-            <class ref="cl.mercados.ws.dto.v10.NewComplexType"/>
                 
         </bindings>
           
